@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="css/styles.css">
     <!--Font Awesome icons for the hambuger menu-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
         <div class="topnav">
             <a href= "index.html" class="active"><img class="logo-icon" src="img/logo.png" alt="icon of a hanger made with a sewing needle"></a>
             <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a href= "chanel.html">Coco Chanel</a>
-                <a href= "kawakubo.html">Rei Kawakubo</a>
-                <a href= "mccartney.html">Stella McCartney</a>
-                <a href= "prada.html" >Miuccia Prada</a>
+            <div class="myLinks">
+                <a href = "chanel.html"> Coco Chanel </a>
+                <a href = "kawakubo.html">Rei Kawakubo</a>
+                <a href = "mccartney.html">Stella McCartney</a>
+                <a href = "prada.html" >Miuccia Prada</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myMenu()">
@@ -35,27 +38,48 @@
             </div>
         </div>
     </header>
-    <h1> Four Trailblazing Women in Fashion</h1>
+    <h1 class="line-1 anim-typewriter"> Four   Trailblazing   Women   in   Fashion</h1>
     <!-- images of four trailblazing women in fashion -->
     <p>Fashion is a dynamic and creative industry that reflects the culture, values, and aspirations of society. It is also a highly competitive and challenging field that requires vision, innovation, and resilience. Let’s explore four trailblazing women who have made their mark in the world of fashion and how they have influenced the industry and society.</p>
-    <div class="headshot-box">
-        <div class="img-box">
-            <img class="headshots-home" src="img/coco.jpg" alt="black and white headshot of Coco Chanel">
-            <div class="overlay"></div>
+    <div class="headshot-holder">
+        <div class="img-wrapper">
+            <img class="blur" src="img/coco.jpg" alt="black and white headshot of Coco Chanel">
+            <div class="content fade"> Coco Chanel
+                <div><a href="chanel.html">Her Story</a></div>
+            </div>
+            <div class="mobile-story-link">
+                <a href="chanel.html">Coco Chanel's Story</a>
+            </div>
         </div>
-        <div class="img-box">
-            <img class="headshots-home" src="img/rei.jpg" alt="black and white headshot of Rei Kawakubo">
-            <div class="overlay"></div>
+        <div class="img-wrapper">
+            <img class="blur" src="img/rei.jpg" alt="black and white headshot of Rei Kawakubo">
+            <div class="content fade">Rei Kawakubo
+                <div><a href="kawakubo.html">Her Story</a></div>
+            </div>
+            <div class="mobile-story-link">
+                <a href="kawakubo.html">Rei Kawakubo's Story</a>
+            </div>
         </div>
-        <div class="img-box">
-            <img class="headshots-home" src="img/stella.jpg" alt="black and white headshot of Stella McCartney">
-            <div class="overlay"></div>
+        <div class="img-wrapper">
+            <img class="blur" src="img/stella.jpg" alt="black and white headshot of Stella McCartney">
+            <div class="content fade">Stella McCartney
+                <div><a href="mccartney.html">Her Story</a></div>
+            </div>
+            <div class="mobile-story-link">
+                <a href="mccartney.html">Stella McCartney's Story</a>
+            </div>
         </div>
-        <div class="img-box">
-            <img class="headshots-home" src="img/miucca.jpg" alt="black and white headshot of Miuccia Prada">
-            <div class="overlay"></div>
+        <div class="img-wrapper">
+            <img class="blur" src="img/miucca.jpg" alt="black and white headshot of Miuccia Prada">
+            <div class="content fade">Miuccia Prada
+                <div><a href="prada.html">Her Story</a></div>
+            </div>
+            <div class="mobile-story-link">
+                <a href="prada.html">Miuccia Prada's Story</a>
+            </div>
         </div>
     </div>
+    <p> The text for this web story has been generated using Microsoft CoPilot.</p>
     <script src="js/myscript.js"></script>
 </body>
 </html>

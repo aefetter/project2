@@ -1,10 +1,43 @@
+header{
+    position: sticky;
+    background-color: black;
+}
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: lato, sans-serif;
+    background-color: #DBDEFE;
+}
+
+footer{
+    background-color: black;
+    margin: 0;
+}
+
+h1 {
+    font-family: monoton;
+    justify-content: center;
+    word-spacing: 10px;
+ }
+
+ p{
+    font-size: 16pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ hr{
+    border: none;
+    height: 3px;
+    color:blueviolet;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 20px 0; /* Adjust margin as needed */
+
+ }
+ header{
+    background-color: #DBDEFE;
  }
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
-    background-color: white;
+    background-color: #000000;
     position: relative;
   }
   
@@ -15,7 +48,7 @@ body {
   
   /* Style navigation menu links */
   .topnav a {
-    color: black;
+    color: #DBDEFE;
     padding: 10px 10px;
     text-decoration: none;
     font-size: 20px;
@@ -32,20 +65,21 @@ body {
   }
   
   /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: white;
+  /* .topnav a:hover { */
+    /* background-color: white;
     color: black;
-  }
+  } */
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: white;
+    /* background-color: white; */
     color: rgb(241, 168, 216);
   }
 
  /*HIDE THE DESKTOP NAV ON MOBILE*/
 .desktop-nav{
     display:none;
+    justify-content: space-between;
 }
 
 .desktop-nav a{
@@ -53,9 +87,17 @@ body {
     padding: 10px 10px;
     text-decoration: none;
     font-size: 20px;
+    font-family: lato;
     display: block;
     align-content: space-between;
 }
+
+.desktop-nav a:hover{
+    color:hotpink;
+}
+/* .myLinks{
+    align-content: right;
+} */
 
 .bio-nav{
     display: flex;
@@ -67,56 +109,95 @@ body {
     height: auto;
 }
 
-/* .headshots-home{
-    object-fit: cover;
-    border-radius: 5%;
-    height: auto;
-    width: 80%;
-    border: solid 1px #707070;
-    margin: 14px;
-} */
 
-.img-box{
-    object-fit: cover;
-    border-radius: 5%;
-    height: auto;
-    width: 80%;
-    border: solid 1px #707070;
-    margin: 14px;
-}
-
-.headshot-box{
-    align-content: space-between;
-    display: flex;
+.headshot-holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* pink hoverstate */
-.headshots-home:hover {
-    filter: brightness(1.2) saturate(80%) hue-rotate(330deg); /* Pink filter effect */
+.img-wrapper{
+    position: relative;
+    overflow: hidden;
 }
 
-/* Pink overlay */
-.overlay {
-    position: absolute; /* Positioned relative to container */
-    top: 0;
-    left: 0;
+.img-wrapper > img {
+    display:block;
     width: 100%;
-    height: 100%;
-    background-color: rgba(255, 192, 203, 0.5); /* Pink overlay with transparency */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.5s; /* Smooth transition for opacity change */
+    object-fit: cover;
+    object-position: center;
 }
 
-/* Show overlay on hover */
-.headshots-home:hover + .overlay {
-    opacity: 1; /* Show overlay on hover */
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    color: lightpink;
+    font-weight: 800;
+    padding: 4rem;
+    background: (255, 192, 203, .8);
 }
 
-/* Show overlay on hover */
-.headshots-home:hover + .overlay {
-    opacity: 1; /* Show overlay on hover */
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > img.blur{
+    filter:blur(25px) brightness(1.5);
+}
+
+.img-wrapper > .content.fade {
+    opacity: 0;
+    
+} 
+.img-wrapper:hover > .content.fade {
+    opacity: 1;
+
+}
+
+ #chanel-quote{
+    font-size: 30px;
+    font-family: cursive;
+ }
+
+ .runway{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.design{
+    aspect-ratio: 1/1;
+}
+
+.bio-box {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically by default */
+    justify-content: space-between;
+    margin: 5%;
+}
+
+/* .intro-vid {
+    width: 100%; /* Ensure the video takes full width */
+    /* margin-top: 20px; /* Add some space between the quote and the video */
+/* }  */
+.show-vids{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 2%;
+}
+.youtube-vid {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+  }
+
+.bio-p{
+    width: 90%;
 }
    /* media queries for mobile vs desktop */
 
@@ -129,11 +210,30 @@ body {
     .desktop-nav{
         display:flex;
     }
-    .headshots-home{
-        width: 20%
+    .mobile-story-link{
+        display: none;
     }
-    /* hover state for images turning black and white */
-    .headshots-home:hover {
-        filter: brightness(1.2) saturate(80%) hue-rotate(330deg);
+    .youtube-vid{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+    .show-vids{
+        flex-direction: row;
+    }
+    .bio-box {
+        flex-direction: row; /* Split elements horizontally on desktop */
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .bio-p{
+        /* width: 60%; */
+        margin: 4%;
+    }
+    .intro-vid {
+        flex: 1; /* Let the video take up remaining space */
+        margin-top: 0; /* Remove top margin for the video */
+        margin-left: 20px; /* Add some space between the quote and the video */
     }
 }

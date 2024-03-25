@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="css/styles.css">
     <!--Font Awesome icons for the hambuger menu-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
         <div class="topnav">
-            <a href= index.html class="active"><img class="logo-icon" src="img/logo.png" alt="icon of a hanger made with a sewing needle"></a>
+            <a href= "index.html" class="active"><img class="logo-icon" src="img/logo.png" alt="icon of a hanger made with a sewing needle"></a>
             <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-              <a href="#chanel">Coco Chanel</a>
-              <a href="#kawakubo">Rei Kawakubo</a>
-              <a href="#mccartney">Stella McCartney</a>
-              <a href="#prada">Miuccia Prada</a>
+            <div class="myLinks">
+                <a href = "chanel.html"> Coco Chanel </a>
+                <a href = "kawakubo.html">Rei Kawakubo</a>
+                <a href = "mccartney.html">Stella McCartney</a>
+                <a href = "prada.html" >Miuccia Prada</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myMenu()">
@@ -26,12 +29,51 @@
             </a>
         </div>
         <div class="desktop-nav">
-            <a href= index.html class = "active"><img class="logo-icon" src="img/logo.png" alt= "icon of a hanger made with a sewing machine needle"></a>
+            <a href= "index.html" class = "active"><img class="logo-icon" src="img/logo.png" alt= "icon of a hanger made with a sewing machine needle"></a>
             <div class="bio-nav">
-                <a href="#chanel">Coco Chanel</a>
-                <a href="#kawakubo">Rei Kawakubo</a>
-                <a href="#mccartney">Stella McCartney</a>
-                <a href="#prada">Miuccia Prada</a>
+                <a href="chanel.html">Coco Chanel</a>
+                <a href="kawakubo.html">Rei Kawakubo</a>
+                <a href="mccartney.html">Stella McCartney</a>
+                <a href="prada.html">Miuccia Prada</a>
             </div>
         </div>
+        <hr>
     </header>
+</body>
+<h1>Coco Chanel</h1>
+<p id="chanel-quote"> </p>
+<div class = "bio-box">
+    <div>
+        <h2>Chanel meets Coco: An Origin Story</h2>
+        <iframe class="youtube-vid" src="https://www.youtube.com/embed/2G88zqPxJ00?si=9y_a-Q8APEuohJQG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p class="bio-p">Coco Chanel is widely regarded as one of the most influential fashion designers of the 20th century. She revolutionized women's fashion by introducing simple, elegant, and comfortable styles that liberated women from the constraints of corsets, frills, and feathers. She also popularized the use of fabrics such as jersey, tweed, and wool, and introduced iconic items such as the little black dress, the Chanel suit, and the Chanel No. 5 perfume. </p>
+</div>
+    <h2>Chanel's Design Legacy</h2>
+    <div class="runway">
+        <div class="img-wrapper design">
+            <img src="img/chanellbd.jpeg" alt="A Chanel little black dress from the 1987 Chanel collection">
+            <div class="content fade"> Little Black Dresses</div>
+        </div>
+        <div class="img-wrapper design">
+            <img src="img/chanel-no5.jpeg" alt="Chanel number 5 perfume on a white background">
+            <div class="content fade"> Chanel No5</div>
+        </div>
+        <div class="img-wrapper design">
+            <img src="img/chanel-255.jpeg" alt="A Chanel 2.55 handbag">
+            <div class="content fade"> Chanel 2.55 handbag</div>
+        </div>
+    </div>
+    <h2>Latest Runway Collections</h2>
+    <div class="show-vids">
+        <iframe class="youtube-vid" src="https://www.youtube.com/embed/j1GPnc34UKA?si=mzdASzi7uikNNXG6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="youtube-vid" src="https://www.youtube.com/embed/hKB1diiMYqk?si=9LOJe3d8SQRmWPmV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+<!-- </div> -->
+<script src="js/myscript.js"></script>
+</body>
+<footer>
+    <p>created by Anna Fetter</p>
+</footer>
+</html>
