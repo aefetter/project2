@@ -1,6 +1,6 @@
 header{
     position: sticky;
-    background-color: black;
+    /* background-color: black; */
 }
 body {
     font-family: lato, sans-serif;
@@ -37,8 +37,7 @@ h1 {
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
-    background-color: #000000;
-    /* position: relative; */
+    background-color: #DBDEFE;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -49,7 +48,7 @@ h1 {
   /* Style navigation menu links */
   .topnav a {
     float: left;
-    color: #DBDEFE;
+    color: black;
     padding: 10px 10px;
     text-decoration: none;
     text-align: center;
@@ -60,11 +59,11 @@ h1 {
   /* Style the hamburger menu */
   .topnav a.icon {
     display: none;
+    background-color: #DBDEFE;
   }
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: white;
     color: black;
   }
   
@@ -153,6 +152,11 @@ h1 {
 .img-wrapper:hover > .content.fade {
     opacity: 1;
 
+}
+
+.mobile-story-link a{
+    font-size: 20px;
+    color: black;
 }
 
  #chanel-quote{
